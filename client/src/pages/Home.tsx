@@ -1,6 +1,6 @@
-// STYLE NOTE: Listochka's page is a botanical milk-and-rose diary.
-// Keep milky white background #FAF8F5, dusty rose #D88C9A, grey-purple #9B8D93,
-// hand-drawn notes, organic asymmetry, and only one social destination: TikTok @leaf_life.
+// STYLE NOTE: Listochka's page is a licorice-and-white botanical diary.
+// Keep white paper, near-black licorice ink, grey-paper details, hand-drawn notes,
+// organic asymmetry, and the three TikTok destinations grouped by role.
 import { useState, type CSSProperties } from "react";
 import {
   ArrowDownRight,

@@ -1,18 +1,19 @@
+/* STYLE NOTE: Listochka's palette is licorice + white: white paper, near-black licorice ink, grey-paper lines, and hand-drawn editorial asymmetry. Keep pink out of the primary system. */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 :root {
-  --bg: #FAF8F5;
+  --bg: #FFFFFF;
   --bg-card: #FFFFFF;
-  --ink: #2D2B2A;
-  --ink-soft: #6C6664;
-  --rose: #D88C9A;
-  --rose-dark: #B66373;
-  --grey-purple: #9B8D93;
-  --grey-light: #F0ECEB;
-  --line: rgba(45, 43, 42, 0.11);
-  --shadow: 0 16px 40px rgba(155, 141, 147, 0.12);
+  --ink: #1F1B1B;
+  --ink-soft: #5A5250;
+  --rose: #211C1C;
+  --rose-dark: #0E0C0C;
+  --grey-purple: #787272;
+  --grey-light: #F3F3F1;
+  --line: rgba(31, 27, 27, 0.14);
+  --shadow: 0 16px 40px rgba(31, 27, 27, 0.12);
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -61,7 +62,7 @@ body {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
   padding: 26px 0 20px;
-  background: rgba(250, 248, 245, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -174,7 +175,7 @@ body {
   height: 9px;
   border-radius: 50%;
   background: var(--rose);
-  box-shadow: 0 0 0 4px rgba(216, 140, 154, 0.2);
+  box-shadow: 0 0 0 4px rgba(31, 27, 27, 0.14);
 }
 
 .listo-hero h1 {
@@ -229,7 +230,7 @@ body {
 .listo-button--rose {
   background: var(--rose);
   color: #fff;
-  box-shadow: 0 8px 24px rgba(216, 140, 154, 0.35);
+  box-shadow: 0 8px 24px rgba(31, 27, 27, 0.20);
 }
 
 .listo-button--rose:hover {
@@ -253,7 +254,7 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(216, 140, 154, 0.15);
+  background: rgba(31, 27, 27, 0.08);
   color: var(--rose-dark);
 }
 
@@ -648,7 +649,7 @@ body {
 .entry-like:hover, .entry-like.is-liked {
   border-color: var(--rose);
   color: var(--rose-dark);
-  background: rgba(216, 140, 154, 0.1);
+  background: rgba(31, 27, 27, 0.06);
 }
 
 .entry-body h3 {
