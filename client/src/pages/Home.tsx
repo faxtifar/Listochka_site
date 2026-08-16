@@ -177,6 +177,26 @@ export default function Home() {
                 <span>подписок</span>
               </div>
             </div>
+            <div className="listo-accounts" aria-label="Аккаунты Ласточки">
+              <p className="listo-accounts-label">все мои страницы</p>
+              <div className="listo-account-list">
+                <a className="listo-account listo-account--live" href="https://www.tiktok.com/@leaf_life" target="_blank" rel="noreferrer">
+                  <span className="account-symbol">✦</span>
+                  <span><strong>@leaf_life</strong><small>для стримов</small></span>
+                  <ArrowUpRight size={15} />
+                </a>
+                <a className="listo-account" href="https://www.tiktok.com/@motya_rbx" target="_blank" rel="noreferrer">
+                  <span className="account-symbol">↗</span>
+                  <span><strong>@motya_rbx</strong><small>основной аккаунт</small></span>
+                  <ArrowUpRight size={15} />
+                </a>
+                <a className="listo-account" href="https://www.tiktok.com/@lakritsa_rbx" target="_blank" rel="noreferrer">
+                  <span className="account-symbol">↗</span>
+                  <span><strong>@lakritsa_rbx</strong><small>основной аккаунт</small></span>
+                  <ArrowUpRight size={15} />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="listo-fact-note">
             <span className="fact-label">статус</span>
@@ -256,8 +276,9 @@ export default function Home() {
               <span>в эфире</span>
             </h2>
             <p>
-              Все новые видео, трансляции и живое общение проходят в моём TikTok.
-              Заходи, будем рады каждому.
+              Стримы проходят в <strong>@leaf_life</strong>, а основные страницы Ласточки —
+              <strong>@motya_rbx</strong> и <strong>@lakritsa_rbx</strong>. Заходи туда,
+              где сейчас идёт история.
             </p>
             <a
               className="listo-button listo-button--rose"
@@ -283,7 +304,7 @@ export default function Home() {
             <img src={assets.avatar} alt="" />
             <span>ласточка / дневник</span>
           </a>
-          <p>молочно-белый свет, розово-серые тона и только один настоящий TikTok.</p>
+            <p>стримы — @leaf_life · основные аккаунты — @motya_rbx и @lakritsa_rbx</p>
           <a
             className="listo-footer-tiktok"
             href="https://www.tiktok.com/@leaf_life"

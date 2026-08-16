@@ -911,3 +911,110 @@ body {
   .listo-stats-row { flex-direction: column; gap: 10px; }
   .listo-footer-bottom { flex-direction: column; gap: 10px; align-items: flex-start; }
 }
+
+/* ACCOUNT ROW — one stream page plus two main pages */
+.listo-accounts {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(155, 141, 147, .42);
+}
+
+.listo-accounts-label {
+  margin: 0 0 12px !important;
+  color: var(--grey-purple) !important;
+  font-family: "Caveat", cursive;
+  font-size: 1.18rem !important;
+  line-height: 1 !important;
+  transform: rotate(-2deg);
+}
+
+.listo-account-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.listo-account {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 10px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,.65);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 180ms var(--ease-out), border-color 180ms ease, background 180ms ease;
+}
+
+.listo-account:hover {
+  border-color: var(--rose);
+  background: var(--grey-light);
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+.listo-account--live {
+  border-color: var(--rose);
+  background: rgba(216, 140, 154, .1);
+}
+
+.account-symbol {
+  flex: 0 0 auto;
+  color: var(--rose-dark);
+  font-size: .9rem;
+}
+
+.listo-account > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.1;
+}
+
+.listo-account strong {
+  overflow: hidden;
+  font-size: .68rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listo-account small {
+  margin-top: 4px;
+  overflow: hidden;
+  color: var(--grey-purple);
+  font-size: .56rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listo-account > svg {
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: var(--rose-dark);
+}
+
+.listo-live-copy strong {
+  color: var(--rose-dark);
+}
+
+@media (max-width: 820px) {
+  .listo-account-list {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .listo-account {
+    padding: 12px 13px;
+  }
+
+  .listo-account strong {
+    font-size: .72rem;
+  }
+
+  .listo-account small {
+    font-size: .62rem;
+  }
+}
